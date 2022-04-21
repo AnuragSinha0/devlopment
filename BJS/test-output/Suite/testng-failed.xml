@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="launchUrl">
+    <classes>
+      <class name="flip.drivers"/>
+    </classes>
+  </test> <!-- launchUrl -->
+  <test name="launchUrl(failed)">
+    <classes>
+      <class name="flip.drivers">
+        <methods>
+          <include name="launchUrl"/>
+        </methods>
+      </class> <!-- flip.drivers -->
+    </classes>
+  </test> <!-- launchUrl(failed) -->
+</suite> <!-- Failed suite [Suite] -->
